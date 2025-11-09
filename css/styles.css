@@ -1414,6 +1414,14 @@ header.one-page .navbar-nav > li > a span {
 .menu-container .navbar-nav li ul.drop-down {
   top: 66px;
 }
+
+a.btn-primary {
+   background-color: #ab2626;
+   color: #fff !important;
+   padding: 0.5rem 1.2rem !important;
+
+}
+
 /***********************************************************************************************/
 /* 04. HOME PAGE */
 /***********************************************************************************************/
@@ -1578,6 +1586,7 @@ header.one-page .navbar-nav > li > a span {
   display: block;
   margin-top: 24px;
 }
+
 #slider_1 .slider-content .slider-button a.btn-slider {
   border: 0px;
   font-size: 18px;
@@ -5085,6 +5094,8 @@ footer .social-icons a:hover {
   .navbar-default .navbar .navbar-right {
     width: 100%;
     text-align: left;
+    display: flex !important;
+    align-items: center !important;
   }
   .navbar-default .navbar-collapse {
     background: #0d0d0d;
