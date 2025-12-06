@@ -120,8 +120,8 @@
 
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="drop">
-                                <a href="index.html" title="Home Layout 01">Home</a>
+                            <li>
+                                <a href="index.html" class="Home" title="Home">Home</a>
                             </li>
                             <li>
                                 <a href="about-us.html" title="About Us">About Us</a>
@@ -151,6 +151,32 @@
         <div id="slider_1" class="owl-carousel owl-theme">
 
             <div class="slider_item_container" data-bg_img="images/home_1_slider_1.jpg" data-bg_color="#000000"
+                data-bg_opacity="0.6">
+                <div class="item">
+                    <div class="slider-content">
+                        <div class="container text-left">
+                            <div class="row">
+                                <div class="slider-bg" data-animation-in="zoomIn"
+                                    data-animation-out="animate-out zoomOut">
+                                    <div class="col-sm-12">
+                                        <h2>Mr Cob</h2>
+                                        <h3>
+                                            Professional Shoe Repair & Leather Restoration in Hyderabad
+                                        </h3>
+
+                                        <div class="slider-button">
+                                            <a href="appointment.html" class="btn btn-slider">Book Appointment</a>
+                                        </div>
+
+                                    </div> <!-- end .col-sm-12  -->
+                                </div> <!-- end .slider-bg  -->
+                            </div> <!-- end .row  -->
+                        </div><!-- end .container -->
+                    </div> <!--  end .slider-content -->
+                </div> <!-- end .item  -->
+            </div> <!-- end .slider_item_container  -->
+
+            <div class="slider_item_container" data-bg_img="images/home_1_slider_1.jpg" data-bg_color="#000000"
                 data-bg_opacity="0.3">
                 <div class="item">
                     <div class="slider-content">
@@ -176,30 +202,6 @@
                 </div> <!-- end .item  -->
             </div> <!-- end .slider_item_container  -->
 
-            <div class="slider_item_container" data-bg_img="images/home_1_slider_2.jpg" data-bg_color="#000000"
-                data-bg_opacity="0.3">
-                <div class="item">
-                    <div class="slider-content">
-                        <div class="container text-center">
-                            <div class="row">
-                                <div class="slider-bg" data-animation-in="zoomIn"
-                                    data-animation-out="animate-out fadeOut">
-                                    <div class="col-sm-12">
-
-                                        <h2>HOT OFFER<br>GET <span>55%</span> OFF !</h2>
-                                        <h3>
-                                            HURRY UP ! GRAB QUALITY SHOE CARE PRODUCTS WITH SPACIAL DEALS.
-                                        </h3>
-                                        <div class="slider-button">
-                                            <a href="appointment.html" class="btn btn-slider">MAKE ORDER NOW !</a>
-                                        </div>
-                                    </div> <!-- end .col-sm-12  -->
-                                </div>
-                            </div> <!-- end .row  -->
-                        </div><!-- end .container -->
-                    </div> <!--  end .slider-content -->
-                </div> <!-- end .item  -->
-            </div> <!-- end .slider_item_container  -->
 
         </div> <!-- end .slider_1  -->
     </div> <!-- end .slider-wrap.  -->
@@ -212,8 +214,8 @@
 
             <div class="row section-heading-wrapper">
                 <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                    <h2 class="text-uppercase">Repair Process</h2>
-                    <h3>Easy Repair Solution</h3>
+                    <h2 class="text-uppercase">Our Easy Repair Process </h2>
+                    <h3>Simple. Transparent. Hassle-Free</h3>
                 </div> <!-- end .col-sm-12  -->
             </div>
 
@@ -248,7 +250,7 @@
                         <figure><img src="images/process_04.jpg" alt="" /></figure>
                         <h3><span>Deliver</span> <br>repaired items</h3>
                     </div>
-                </div> <!--  end .col-lg-3 col-md-3 col-sm-12 col-xs-12  -->
+                </div>
 
             </div> <!--  end .row -->
 
@@ -282,10 +284,11 @@
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-                    <figure class="about-img">
+                    <figure class="about-img" style="aspect-ratio: 1/1; background-color: none;">
                         <!-- <a class="venobox" data-vbtype="video" data-autoplay="true" href="#"><i
                                 class="fa fa-play"></i></a> -->
-                        <img src="images/about_us.jpg" alt="about" />
+                        <img src="images/about_us.jpg" alt="about" width="100%" height="100%"
+                            style="object-fit: cover;" />
                     </figure> <!-- end .cause-img  -->
 
                 </div> <!--  end .col-lg-6 col-md-6 col-sm-12 col-xs-12  -->
@@ -294,12 +297,10 @@
 
                     <div class="about-details">
                         <p>
-                            We provide expert shoe repair and restoration services to extend the life of your favorite
-                            footwear. Our services include polishing, adhesive repair, sole and heel repair, stitching
-                            repair, buckle and hardware replacement, conditioning, color matching dyes, recoloring,
-                            stretching, mold and mildew removal, and sock liner repair. Using quality materials and
-                            skilled craftsmanship, we restore comfort, strength, and style to all types of shoes, boots,
-                            and sandals. Reliable, affordable, and eco-friendly shoe repair you can trust.
+                            We are a team of trained footwear repair specialists dedicated to giving your old, damaged,
+                            or worn-out shoes a brand-new life. With years of experience in leather care, shoe repair,
+                            colour restoration, deep cleaning, and professional craftsmanship, we bring a modern,
+                            hygienic, and reliable repair service to Hyderabad.
                         </p>
 
                         <ul>
@@ -310,7 +311,7 @@
                             <li>Up to 20% discount in every product</li>
                         </ul>
 
-                        <a href="#" class="btn btn-theme">LEARN ABOUT US</a>
+                        <a href="#" class="btn btn-theme" style="align-self: flex-end;">LEARN ABOUT US</a>
 
                     </div> <!--  end .about-details -->
 
@@ -327,253 +328,354 @@
 
     <!--  SERVICE SECTION 1-->
 
-    <section class="section-content-block section-service-bg">
+    <section class="section-content-block section-service-bg why-choose-us">
 
         <div class="container">
 
             <div class="row section-heading-wrapper-alt">
-
                 <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                    <h2 class="text-uppercase">Our Services</h2>
-                    <h3>Ensure Quality</h3>
+                    <h2 class="text-uppercase">Why Choose Us?</h2>
                 </div> <!-- end .col-sm-12  -->
+            </div>
 
+            <div class="row content-container">
+                <div>
+                    <h2>We deliver high-quality, long-lasting, and affordable Shoe Repair Services in Hyderabad</h2>
+                    <p>
+                        If you are searching for Shoe Repair Service in Hyderabad, Telangana, Mr Cob is your trusted
+                        destination for all types of shoe repair, shoe cleaning, sole replacement, heel repair,
+                        stitching repair, leather restoration, shoe polishing, colour recolouring, bag repair, buckle
+                        replacement, and sneaker cleaning services
+                    </p>
+                    <p>
+                        We provide professional shoe repair services in Hyderabad designed to make your old, damaged, or
+                        worn-out footwear look brand new again. With expert craftsmen and premium materials, we offer
+                        everything—from adhesive shoe repair, sole change, shoe heel repair, shoe stitching repair,
+                        mould & mildew removal, sock liner replacement, colour matching dyes, leather boot repair, and
+                        more.
+                    </p>
+                </div>
             </div>
 
             <div class="row wow fadeInUp">
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
-
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_1.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_1.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
                             <h2>Polishing</h2>
-
-                        </a>
-
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Shoe Cleaning Service & Deep Shoe Polishing</h2>
+                            <p>
+                                From regular polish to premium shine, our shoe cleaning and shoe polishing services
+                                bring back the original glow of leather, suede, and boots.
+                            </p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_2.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
+                            <h2>Adhesive Repair</h2>
 
-                        <a href="#">
+                        </div>
 
-                            <figure class="service-img">
-                                <img src="images/services/service_2.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
-                            <h2>Adhesive Repai</h2>
-                        </a>
-
+                        <div class="flip-card-back">
+                            <h2>Adhesive Repair for Shoes (Gum Fix)</h2>
+                            <p>If shoes are opening from the side or bottom, we use industrial-strength adhesive to deliver durable, long-lasting adhesive shoe repair.</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
 
 
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
-
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_3.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_3.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
                             <h2>Sole Change</h2>
-                        </a>
 
+                        </div>
+
+                        <div class="flip-card-back">
+                            <h2>Sole Change & Sole Replacement (Half / Full)</h2>
+                            <p>Our sole replacement service includes half soles, full soles, anti-slip soles, sports shoe soles, and premium rubber soles that improve comfort and durability</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
-
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_4.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_4.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
                             <h2>Heel Repair</h2>
-                        </a>
 
+                        </div>
+
+                        <div class="flip-card-back">
+                            <h2>Heel Repair & Heel Tip Replacement</h2>
+                            <p>Broken or worn-out heels? We provide heel repair services, heel rebuilding, heel tip replacement, and stabilizing support.</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
-
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_5.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_5.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
                             <h2>Stitching Repair</h2>
-                        </a>
 
+                        </div>
+
+                        <div class="flip-card-back">
+                            <h2>Shoe Stitching Repair & Patchwork</h2>
+                            <p>Our shoe stitching repair service fixes open stitches, torn sides, ripped uppers, and leather damage with clean, strong stitching.</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-
-                    <div class="service-layout-1">
-
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_6.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
-                            <h2>Buckle & Hardware Replacement</h2>
-                        </a>
-
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_6.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
+                            <h2>Buckle Replacement</h2>
+                        </div>
+                        
+                        <div class="flip-card-back">
+                            <h2>Buckle, Zip & Hardware Replacement</h2>
+                            <p>Broken buckles, zips, hooks, and loops are replaced with high-quality hardware replacement options.</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
-
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_7.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_7.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
                             <h2>Conditioning</h2>
-                        </a>
+                        </div>
 
+                        <div class="flip-card-back">
+                            <h2>Leather Shoe Repair & Leather Boot Conditioning</h2>
+                            <p>For leather lovers, we offer leather cleaning, leather conditioning, leather colour restoration, leather boot repair, and recolouring services.</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
 
+
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
-
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_8.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_8.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
                             <h2>Color Matching Dyes</h2>
-                        </a>
-
+                        </div>
+                        
+                        <div class="flip-card-back">
+                            <h2>Colour Matching, Dyes & Recolouring Services</h2>
+                            <p>Faded shoes are brought back to life with perfect colour matching dyes, premium recolouring, and finishing protection</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
-
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_9.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_9.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
                             <h2>Recoloring</h2>
-                        </a>
 
+                        </div>
+
+                        <div class="flip-card-back">
+                            <h2>Title</h2>
+                            <p>content</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
-
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_10.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_10.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
                             <h2>Stretching</h2>
-                        </a>
 
+                        </div>
+
+                        <div class="flip-card-back">
+                            <h2>Stretching Shoes for Better Fit</h2>
+                            <p>Tight shoes? We offer professional shoe stretching to increase comfort without damaging the footwear shape</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
-
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_11.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_11.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
                             <h2>Mold & Mildew Removal</h2>
-                        </a>
 
+                        </div>
+                        
+                        <div class="flip-card-back">
+                            <h2>Mold & Mildew Removal</h2>
+                            <p>We provide safe mould removal services that eliminate fungus, odour, and moisture, restoring hygiene and freshness.</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
-                    <div class="service-layout-1">
+                    <div class="flip-card-inner">
+                        <div class="service-layout-1 flip-card-front">
+                            <div>
+                                <figure class="service-img">
+                                    <img src="images/services/service_12.jpg" alt="service" />
+                                </figure> <!-- end .cause-img  -->
+                            </div>
+                            <h2>Sock Liner Repair</h2>
 
-                        <a href="#">
-
-                            <figure class="service-img">
-                                <img src="images/services/service_12.jpg"
-                                    alt="service" />
-                            </figure> <!-- end .cause-img  -->
-
+                        </div>
+                        
+                        <div class="flip-card-back">
                             <h2>Sock Liner Repair & Replacement</h2>
-                        </a>
-
+                            <p>Improve comfort with sock liner replacement, cushioning support, and inner sole refresh.</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
-                <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flip-card">
 
+                    <div class="flip-card-inner">
                         <div class="service-layout-1">
 
-                            <a href="#">
-
+                            <a href="#">   flip-card-front  
                                 <figure class="service-img">
                                     <img src="images/service_5.jpg" alt="service" />
                                 </figure> 
 
-                                <h2>Sole Change</h2>
                             </a>
-
+                            <h2>Sole Change</h2>
+    
                         </div>
+
+                        <div class="flip-card-back">
+                            <h2>Title</h2>
+                            <p>content</p>
+                            <div class="button-container">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
 
                     </div> -->
 
@@ -591,134 +693,68 @@
 
     <!-- TEAM SECTION 02 -->
 
-    <section class="section-content-block">
+    <section class="section-content-block section-our-team section-pure-white-bg">
 
-        <div class="container">
-
-            <div class="row section-heading-wrapper">
-
-                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                    <h2 class="text-uppercase">TRAINED Members</h2>
-                    <h3>Our Experts</h3>
-                </div> <!-- end .col-sm-12  -->
-
-            </div>
+        <div class="container wow fadeInUp">
 
             <div class="row">
 
-                <div class="team-carousel owl-carousel" data-items="4">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-team">
 
-                        <div class="team-layout-1">
+                        <figure class="team-member">
+                            <a href="#" title="ALEXANDER GARY">
+                                <img src="images/team_1.jpg" alt="team" />
+                            </a>
+                        </figure> <!-- end. team-member  -->
 
-                            <figure class="team-member">
-                                <a href="#" title="MELISSA MUNOZ">
-                                    <img src="images/team_1.jpg" alt="MELISSA MUNOZ" />
-                                </a>
-
-                            </figure> <!-- end. team-member  -->
-
-                            <article class="team-info">
-                                <h3>MELISSA MUNOZ</h3>
-                                <h4>FOUNDER</h4>
-                                <div class="team-social-share clearfix">
-                                    <a href="#" title="Facebook"> <i class="fa fa-facebook rectangle"></i> </a>
-                                    <a href="#" title="twitter"> <i class="fa fa-twitter rectangle"></i> </a>
-                                    <a href="#" title="Google Plus"> <i class="fa fa-google-plus rectangle"></i> </a>
-                                    <a href="#" title="Linkedin"> <i class="fa fa-linkedin rectangle"></i> </a>
-                                </div> <!-- end .author-social-box  -->
-                            </article>
-                        </div> <!--  end team layout-1 -->
-
-                    </div> <!--  end .col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-
-                        <div class="team-layout-1">
-
-                            <figure class="team-member">
-                                <a href="#" title="ALEXANDER GARY">
-                                    <img src="images/team_2.jpg" alt="ALEXANDER GARY" />
-                                </a>
-
-                            </figure> <!-- end. team-member  -->
-
-                            <article class="team-info">
-                                <h3>ALEXANDER GARY</h3>
-
-                                <h4>CO-FOUNDER</h4>
-                                <div class="team-social-share clearfix">
-                                    <a href="#" title="Facebook"> <i class="fa fa-facebook rectangle"></i> </a>
-                                    <a href="#" title="Facebook"> <i class="fa fa-twitter rectangle"></i> </a>
-                                    <a href="#" title="Facebook"> <i class="fa fa-google-plus rectangle"></i> </a>
-                                    <a href="#" title="Facebook"> <i class="fa fa-linkedin rectangle"></i> </a>
-                                </div> <!-- end .author-social-box  -->
-                            </article>
-                        </div> <!--  end team-layout-1 -->
-
-                    </div> <!--  end .col-lg-3 col-md-3 col-sm-6 col-xs-12  -->
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-
-                        <div class="team-layout-1">
-
-                            <figure class="team-member">
-                                <a href="#" title="JOHN ABRAHAM">
-                                    <img src="images/team_3.jpg" alt="JOHN ABRAHAM" />
-                                </a>
-                            </figure> <!-- end. team-member  -->
-
-                            <article class="team-info">
-                                <h3>JOHN ABRAHAM</h3>
-
-                                <h4>MANAGER</h4>
-                                <div class="team-social-share clearfix">
-                                    <a href="#" title="Facebook"> <i class="fa fa-facebook rectangle"></i> </a>
-                                    <a href="#" title="Facebook"> <i class="fa fa-twitter rectangle"></i> </a>
-                                    <a href="#" title="Facebook"> <i class="fa fa-google-plus rectangle"></i> </a>
-                                    <a href="#" title="Facebook"> <i class="fa fa-linkedin rectangle"></i> </a>
-                                </div> <!-- end .author-social-box  -->
-                            </article>
-                        </div> <!--  end team-layout-1 -->
-
-                    </div> <!--  end .col-lg-3 col-md-3 col-sm-6 col-xs-12  -->
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-
-                        <div class="team-layout-1">
-
-                            <figure class="team-member">
-                                <a href="#" title="JOHN ABRAHAM">
-                                    <img src="images/team_4.jpg" alt="JOHN ABRAHAM" />
-                                </a>
-                            </figure>
-
-                            <article class="team-info">
-                                <h3>JOHN ABRAHAM</h3>
-
-                                <h4>MANAGER</h4>
-                                <div class="team-social-share clearfix">
-                                    <a href="#" title="Facebook"> <i class="fa fa-facebook rectangle"></i> </a>
-                                    <a href="#" title="Facebook"> <i class="fa fa-twitter rectangle"></i> </a>
-                                    <a href="#" title="Facebook"> <i class="fa fa-google-plus rectangle"></i> </a>
-                                    <a href="#" title="Facebook"> <i class="fa fa-linkedin rectangle"></i> </a>
-                                </div> <!-- end .author-social-box  -->
-                            </article>
-                        </div> <!--  end team-layout-1 -->
-
-                    </div> <!--  end .col-lg-3 col-md-3 col-sm-6 col-xs-12  -->
+                    </div> <!--  end articles -->
 
                 </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+                    <div class="single-team-details">
+
+                        <article class="team-info">
+                            <h3>ALEXANDER GARY</h3>
+                            <h4>Chief Cobbler</h4>
+                        </article>
+
+                        <ul class="team-social-share-2 clearfix">
+
+                            <li> <a class="fa fa-facebook rectangle" href="#" title="Facebook"></a></li>
+                            <li> <a class="fa fa-twitter rectangle" href="#" title="Twitter"></a></li>
+                            <li> <a class="fa fa-linkedin rectangle" href="#" title="Linkedin"></a></li>
+                            <li> <a class="fa fa-google-plus rectangle" href="#" title="Google Plus"></a></li>
+                        </ul> <!-- end .author-social-box  -->
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa.
+                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+                            eget, arcu.
+                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.Nullam dictum felis eu pede
+                            mollis pretium.
+                            Integer tincidunt. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                            consequat vitae, eleifend ac, enim.
+                        </p>
+
+                        <a class="btn btn-team-details" href="appointment.html">Get Appointment</a>
+
+                    </div>
+
+                </div>
+
 
             </div> <!-- end .row  -->
 
         </div> <!-- end .container  -->
 
     </section> <!--  end .section-our-team -->
-
-
-
     <!--  SECTION CTA 02 -->
 
     <section class="section-content-block section-secondary-bg">
