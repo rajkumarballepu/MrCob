@@ -7077,8 +7077,8 @@ footer .social-icons a:hover {
 }
 
 .flip-card-front h2 {
-  color: #6b1818;
-  mix-blend-mode: color-burn;
+  color: #ab2626;
+  /* mix-blend-mode: luminosity; */
 }
 
 .flip-card-inner {
@@ -7109,8 +7109,8 @@ footer .social-icons a:hover {
 }
 
 .flip-card-front {
-  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
-     rgb(255, 211, 195) 40%, #ab2626 49%);
+  background: linear-gradient(120deg, #fff 60%, #fff 88%,
+     #fff 40%, #ab262699 49%);
   color: #ab2626;
 }
 
