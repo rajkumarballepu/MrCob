@@ -2184,7 +2184,7 @@ a.btn-primary {
   overflow: hidden;
   margin: 0 0 32px 0;
   text-align: left;
-  background: rgba(255, 255, 255, 0.9);
+  /* background: rgba(255, 255, 255, 0.9); */
   position: relative;
   padding: 0;
   -webkit-transition: all 1s ease-out;
@@ -7062,6 +7062,7 @@ footer .social-icons a:hover {
   perspective: 1000px;
   font-family: sans-serif;
   height: 428px;
+  aspect-ratio: 3.4/4;
 }
 
 .title {
@@ -7168,3 +7169,30 @@ footer .social-icons a:hover {
   font-size: 1rem;
   color: #fff;
 }
+
+.about-img.about-us-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img.about-us-1 img {
+  aspect-ratio: 1/1;
+  height: 320px;
+}
+
+.about-hero > div {
+  height: 100%;
+}
+/* 
+.about-us-services .panel-heading {
+  background-color: transparent !important;
+}
+
+.about-us-services .panel-heading .accordion-toggle  {
+  color: #000000 !important;
+}
+
+.about-us-services .panel-body {
+  margin-left: 2rem;
+} */
