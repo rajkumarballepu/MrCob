@@ -1274,8 +1274,6 @@ a.btn-about:hover {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   justify-content: center;
-  animation: jump-shaking 1s infinite;
-  animation-delay: 1000ms;
 }
 
 .whatsapp-link {
@@ -1288,6 +1286,19 @@ a.btn-about:hover {
   align-items: center;
   justify-content: center;
   font-size: 2.3rem;
+}
+
+.wa-btn {
+  padding: 0rem 1.5rem 0rem 1rem;
+  background-color: #16BE45;
+  color: #fff;
+  fill: #fff;
+}
+
+#wa-send-button {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes jump-shaking {
@@ -1497,24 +1508,36 @@ a.logo img {
 .navbar-default .navbar-nav>li {
   margin-left: 20px;
   position: relative;
+  background-color: transparent !important;
 }
 
+.navbar-default .navbar-nav>li.active::after {
+  width: 78%;
+  background-color: #ab2626;
+}
 
 .navbar-default .navbar-nav>li::after {
   content: "";
   position: absolute;
   display: inline-block;
-  background-color: #ab2626;
+  background-color: #6e6e6e;
   height: 3px;
   border-radius: 5px;
   top: 70%;
   left: 0;
-  width: 0;
+  width: 78%;
   transition: .5s;
+}
+
+.navbar-default .navbar-nav>li.active > a {
+  color: #ab2626 !important;
+  background-color: transparent !important;
 }
 
 .navbar-default .navbar-nav>li:hover::after {
   width: 100%;
+  background-color: #ab2626;
+
 }
 
 .navbar-default .navbar-nav>li>a {
