@@ -4340,10 +4340,10 @@ ul.pagination li:last-child {
   background-attachment: fixed;
   background-position: center center;
   background-color: #ab2626;
-  /* background-image: url("../images/header-bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   border: 0px solid #fff;
+  /* background: url("../images/7039053_11769.jpg"); */
 }
 
 .page-header:before {
@@ -5068,7 +5068,7 @@ ul.pagination li:last-child {
 /* 12. FOOTER */
 /***********************************************************************************************/
 footer {
-  background-image: url("../images/footer_bg.jpg");
+  background-image: url("/images/3265736.jpg");
   background-repeat: repeat;
   background-position: center center;
   background-size: cover;
@@ -5099,6 +5099,14 @@ footer a:hover {
   color: #ab2626;
 }
 
+footer .section {
+  margin-top: 3rem;
+}
+
+footer .section-brand>p {
+  padding-left: 2rem;
+}
+
 footer .footer-intro {
   margin-bottom: 32px;
 }
@@ -5109,7 +5117,52 @@ footer .social-icons {
   margin-top: 0px;
 }
 
+footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .section a::after {
+  display: none !important;
+}
+
 footer .social-icons a {
+  /* border: 1px solid #ab2626;
+  background: #ab2626;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 5px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  width: 40px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box; */
+}
+
+footer .social-icons.new a {
+  display: block;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .section li:hover {
+  text-decoration: underline;
+}
+
+footer .social-icons.new a .icon {
   border: 1px solid #ab2626;
   background: #ab2626;
   color: #ffffff;
@@ -5133,13 +5186,13 @@ footer .social-icons a {
   background-clip: padding-box;
 }
 
-footer .social-icons a:last-child {
-  margin: 0;
-}
-
-footer .social-icons a:hover {
+footer .social-icons.new a:hover .icon {
   background: #81491d;
   color: #ffffff;
+}
+
+footer .social-icons a:last-child {
+  margin: 0;
 }
 
 .follow-us {
@@ -7245,7 +7298,7 @@ ul.side-nav-list>li {
   display: inline-block;
   background-color: #ab262652 !important;
   font-weight: 400 !important;
-  font-size: 1.1rem;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
   transition: .5s;
